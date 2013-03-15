@@ -1,29 +1,30 @@
 Fri Mar 15 13:55:11 EDT 2013
 ============================
 
-@ Instagram talk now.
+Instagram talk now.
 
-Redis media id
+Redis db
 
-Async background -- broker
+Async background broker
 
 "Justin Bieber problem"
 
-(Didn't say how their broker was built -- MQ like)
+(Didn't say how their broker was built -- MQ like?)
 
 Oh. They're using Gearman.
+
  - Simple purpose built task queue
  - Weak Framework Support
 
- - They ran out of memory and crashed, no recovery
-
- - "Probably should have used Redis at this point"
+ * They ran out of memory and crashed, no recovery
+ * "Probably should have used Redis at this point"
 
 Now enters Celery (yay)
+
  - celeryd
  - excellent django support
 
- Which broker?
+Which broker?
 
 Redis
 + Already use it
@@ -46,8 +47,6 @@ RabbitMQ (ha, that's what I plan to use)
 + Low-Maintenance Synchronous Replication
 + Excellent Celery Compatibility
 + Support
--
-
 
 RabbitMQ 3.0
 
@@ -55,14 +54,17 @@ EC2 c1.xlarge, RAID instance storage
 - "Way Overprovisioned"
 
 Alerting
+~~~~~~~~
 We use Sensu
-Monitors & alerts on quue lenght threshold
+Monitors & alerts on queue length threshold
 ... rabbitmctl
 
 
 Graphing
 ~~~~~~~~
 ...
+
+# Missed writing this section
 
 Round robin approach to select a broker
 
@@ -74,21 +76,19 @@ Celery only supported 1 broker host last year when we started
 Created kombu-multibroker "shim"
 Multiple brokers used in ...
 
-
 Concurrency Models
 + multiproc
 - eventlet
 + gevent
 - threads
 
-
 "gevent is cool and all but..."
 
 *Separate slow and fast tasks*
+
 # At a hack level, but a reasonable design choice
 
 "NLP Proof gives us choices -- to retry or not to retry"
-
 
 *Publisher confirms*
 * AMQP default is that we don't know if things were published or not
@@ -99,15 +99,14 @@ Concurrency Models
 "Avoid using async tasks as a 'backup' mechanism only during failures. It'll probably break."
 
 They avoided pickling things and went with super simple object passing...
-# Why not protobufs, ...?
+
+# Why not protobufs, thrift, json, avro, etc.?
 
 Summary
 ~~~~~~~
 
 Celery + RabbitMQ
-
 Kombu
-
 
 Actions for me
 ~~~~~~~~~~~~~~
