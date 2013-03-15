@@ -87,16 +87,19 @@ Concurrency Models
 *Separate slow and fast tasks*
 # At a hack level, but a reasonable design choice
 
+"NLP Proof gives us choices -- to retry or not to retry"
 
 
+*Publisher confirms*
+* AMQP default is that we don't know if things were published or not
+* Publisher Confirms makes broker send acks back on publishes
+* kombu-multibroker forces this
+* Can cause dup...
 
+"Avoid using async tasks as a 'backup' mechanism only during failures. It'll probably break."
 
-
-
-
-
-
-
+They avoided pickling things and went with super simple object passing...
+# Why not protobufs, ...?
 
 
 
@@ -107,4 +110,10 @@ Summary
 
 Celery + RabbitMQ
 
+Kombu
 
+
+TODO
+====
+
+Built rabbit-in-a-box
