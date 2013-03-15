@@ -1,5 +1,5 @@
-
 Fri Mar 15 13:55:11 EDT 2013
+============================
 
 @ Instagram talk now.
 
@@ -61,7 +61,7 @@ Monitors & alerts on quue lenght threshold
 
 
 Graphing
-========
+~~~~~~~~
 ...
 
 Round robin approach to select a broker
@@ -101,19 +101,49 @@ Concurrency Models
 They avoided pickling things and went with super simple object passing...
 # Why not protobufs, ...?
 
-
-
-
-
 Summary
-=======
+~~~~~~~
 
 Celery + RabbitMQ
 
 Kombu
 
 
-TODO
-====
+Actions for me
+~~~~~~~~~~~~~~
 
-Built rabbit-in-a-box
+* Build rabbit-in-a-box
+* Try out celery
+
+Fri Mar 15 14:32:19 EDT 2013
+============================
+
+Now at Asheesh Laroia's "Scrapy it GETs the web"
+
+Loved his statement "CSS gives you an API incidentally built by web designers"
+
+scrapyd is a daemon you can throw scrapy projects at. I'll try that out later.
+
+Better disable the telnet console
+
+Async kitty
+
+import spidermonkey
+# Firefox's javascript runtime
+
+Use selenium
+
+Scrapy -> Django :)
+
+Fri Mar 15 15:11:18 EDT 2013
+============================
+
+Onto the Sphinx automation talk.
+
+First up, reStructuredText is awesome.
+
+"Issue roles for simplicity" -- makes you tied to the design of your text, but gives you programmability and agility
+
+
+
+
