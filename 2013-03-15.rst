@@ -180,11 +180,61 @@ Idempotency -- *Do* Repeat Yourself (without shooting yourself in the foot)
 
 # Definitely going to need to watch this over -- I want to see their overall infrastructure
 
+Oh holy crap, they're making their data available. We need to grab that!
+
+
+Fri Mar 15 18:13:44 EDT 2013
+============================
+
+Visualization of GitHub
+
+umbrella.io
+pushpin
+Mixpanel for geo
+
+One of Django's core designers
+
+design is constraints
+
+acquire
+parse
+filter
+mine
+represent
+ ...
+
+Choosing a visual representation
+--------------------------------
+
+Tell a story
+
+All in common -> Convey some meaning
+
+Meaning requires context
+
+Choosing a medium
+
+Choosing an audience
+
+One size fits nobody.
+
+Their audience
+^ Know about github
+^ Passing knowledge of coding
 
 
 
+processing.js -- written by jQuery guy
+Logo for the modern computer
 
+D3 -- data visualization toolkit for the web
+# Already love it. Preaching to the choir.
 
+He's covering d3 scales and color scales.
+
+d3 goes well beyond rgb
+
+Didn't imagine he was going to give a talk on D3.
 
 
 
