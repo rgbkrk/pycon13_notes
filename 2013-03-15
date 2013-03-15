@@ -1,0 +1,110 @@
+
+Fri Mar 15 13:55:11 EDT 2013
+
+@ Instagram talk now.
+
+Redis media id
+
+Async background -- broker
+
+"Justin Bieber problem"
+
+(Didn't say how their broker was built -- MQ like)
+
+Oh. They're using Gearman.
+ - Simple purpose built task queue
+ - Weak Framework Support
+
+ - They ran out of memory and crashed, no recovery
+
+ - "Probably should have used Redis at this point"
+
+Now enters Celery (yay)
+ - celeryd
+ - excellent django support
+
+ Which broker?
+
+Redis
++ Already use it
++ Very Fast, Efficient
+- Polling for Task Distribution
+- Messy Non-Synchronous Replication
+- Memory Limits Task Capacity
+
+Beanstalk
++ Purpose-Built Task Queue
++ Very Fast, Efficient
++ Pushes to Consumers
++ Spills to Disk
+- No Replication
+- Useless For Anything Else
+
+RabbitMQ (ha, that's what I plan to use)
++ Reasonably Fast, Efficient
++ Spill-To-Disk
++ Low-Maintenance Synchronous Replication
++ Excellent Celery Compatibility
++ Support
+-
+
+
+RabbitMQ 3.0
+
+EC2 c1.xlarge, RAID instance storage
+- "Way Overprovisioned"
+
+Alerting
+We use Sensu
+Monitors & alerts on quue lenght threshold
+... rabbitmctl
+
+
+Graphing
+========
+...
+
+Round robin approach to select a broker
+
+~25,000 app threads, publishing tasks
+
+Span datacenters
+
+Celery only supported 1 broker host last year when we started
+Created kombu-multibroker "shim"
+Multiple brokers used in ...
+
+
+Concurrency Models
++ multiproc
+- eventlet
++ gevent
+- threads
+
+
+"gevent is cool and all but..."
+
+*Separate slow and fast tasks*
+# At a hack level, but a reasonable design choice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary
+=======
+
+Celery + RabbitMQ
+
+
