@@ -145,4 +145,46 @@ First up, reStructuredText is awesome.
 
 
 
+Fri Mar 15 17:47:57 EDT 2013
+============================
+
+Met with Travis Oliphant of Continuum Analytics.
+
+Thanked Kenneth Reitz for python-guide.
+
+:D
+
+Walked in late to the GitHub visualization talk
+
+tmux - terminal multiplexer
+
+We used MongoDB for data crunching on a budget.
+
+Network
+-------
+git != github
+author != git user
+
+celery as asynchronous task queue
+
+celery in the cloud
+Heroku's first dyno is free, nobody says it has to be a web dyno...
+
+redis for broker, result store
+
+There's no storage for Heroku, by design
+
+Data set always changing (github)
+
+Idempotency -- *Do* Repeat Yourself (without shooting yourself in the foot)
+
+# Definitely going to need to watch this over -- I want to see their overall infrastructure
+
+
+
+
+
+
+
+
 
