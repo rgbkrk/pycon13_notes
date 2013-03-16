@@ -161,7 +161,7 @@ tmux - terminal multiplexer
 We used MongoDB for data crunching on a budget.
 
 Network
--------
+~~~~~~~
 git != github
 author != git user
 
@@ -204,7 +204,7 @@ represent
  ...
 
 Choosing a visual representation
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tell a story
 
@@ -247,7 +247,7 @@ json is bloated for tabular data
 # Structured data in JSON
 
 Datapoints
-----------
+~~~~~~~~~~
 name
 user
 
@@ -271,7 +271,7 @@ They're calling this the Polyglot Project (but it's not up on the web yet, and t
 
 
 Fri Mar 15 20:09:53 EDT 2013
-----------------------------
+============================
 
 Missed out on the Big Data Algorithms talk (well, part of it). He used bloomfilters to store graph data. I definitely need to watch the video from that talk.
 
@@ -303,13 +303,6 @@ No more notes. Over and out.
 And I'm back.
 
 "Tools come and go -- focus on the writing."
-
-
-Fri Mar 15 20:58:33 EDT 2013
-----------------------------
-
-
-
 
 
 
