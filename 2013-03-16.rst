@@ -14,3 +14,243 @@ Offline Commons
 Open content, offline, let it be shared offline.
 
 
+Sat Mar 16 17:40:21 EDT 2013
+============================
+
+Attended the deployment talk. Notes on Droid. Will post later.
+
+
+Sat Mar 16 17:41:10 EDT 2013
+============================
+
+Now in the "Building Full-Stack Scientific Applications in Python" Talk
+
+http://durden.github.com/python_science_apps/
+
+Sample app overview
+* Model
+  - HDF5/PyTables
+* View
+  - HTML/Javascript
+* Controller
+  - HTML/CSS/Javascript
+
+Model
+~~~~~
+
+
+HDF5
+----
+* Built for scientific data
+* Designed for big data
+* Hierarchical format
+* Fast parallel/random access
+* Portable binary format
+* Easy to discover/crawl structure
+
+PyTables
+--------
+* ORM for your HDF5
+* Understands Numpy
+* More comprehensive
+
+
+View
+~~~~
+
+PyQt
+----
+* Yeeha Qt
+* If going commercial, use Pyside
+
+
+PyQwtGraph ???
+
+
+Controller
+~~~~~~~~~~
+NumPy
+-----
+* Arrays with brains
+* Fast element-wise operations
+* Smart memory management/copy semantics
+
+Numpy tries to give a view rather than a copy if possible
+
+
+Pandas
+------
+
+Yeeha for Pandas.
+
+Fast read/write for SQL dbs, CSV, HDF5
+Groupby and merge large data sets
+Toolkit to unify NumPy/matplotlib
+
+'Replacement' for R # :)
+
+Sat Mar 16 18:17:32 EDT 2013
+============================
+
+Numba Talk
+
+PyCUDA
+* A wha?
+
+numfocus
+* Public charity to help the scientific Python tools
+
+"Why is Python slow?"
+
+* Dynamic typing
+* Attribute lookups
+* Numpy get-item
+
+"I like to go to stack overflow, find slow Python code and do it well in numpy to demonstrate the real speed"
+
+What are Scientists doing Now?
+
+Writing critical parts in C/C++/Fortran and "wrapping" with
+* SWIG
+* ctypes
+* Cython
+* f2py
+
+Cython is the most popular today
+
+NumPy Array is a typed container
+
+Requirements Part I
+Work with CPython (want full scientific Python stack)
+Minimal modifications to code
+Programmer control over what and when to "jit"
+Ability to build static extensions (for libraries)
+  ...
+
+Requirements Part II
+Produce code as fast as C (maybe even Fortran)
+Support NumPy array expression and be able to produce unviersal functions (y = sin(x))
+Provide a tool that could adapt to provide parallelism and produce code for modern vector hardware (GPUs, accelerators, and many-core machines)
+
+numpy.vectorize !
+
+Do we have to write the full compiler?
+NO!
+LLVM has done much of the heavy lifting
+LLVM = Compilers for everybody
+
+llvm py
+
+Face of a modern compiler
+  C++     --\                                 /--> x86
+  C        ---> Intermediate Representation ----> ARM
+  Fortran --/                                 \--> PTX
+  ObjC   --/
+
+
+
+@numba.autojit
+
+
+Holy fuck.
+
+
+Numpy + Mamba = Numba
+
+
+
+Python Function -> LLVMPY -> Machine Code
+                LLVM Library
+
+
+buffer protocol ...
+
+
+Simple API to turn Python into
+
+Typed containers help here
+
+decorators to use numba's jit
+
+
+Big idea -- compile python, get ridiculous speedups
+
+
+Numba under the hood
+
+Python source -> Python Parser -> Python AST ->
+      Numba Stage 1 ... -> Numba Stage n -> Numba AST -> Numba Code Generator -> LLVM
+
+Numba architecture
+* Entry points
+  - .../numba/decorators.py
+* ...
+
+
+
+Better Array Specialization
+* This is where they need the most love
+
+
+numba-users@continuum.io
+
+Sprints on Sunday
+
+
+
+How could you use this to speed up work with dataframes?
+
+
+
+Sat Mar 16 19:33:52 EDT 2013
+============================
+
+Open Source ALL the things!
+
+Make it Open Source and you'll have an easier time.
+
+Straight up called out urllib2
+
+"Python needs more pragmatic packages"
+
+Python for Humans
+
+Let's Break it Down
+What is HTTP at its core?
+* A small set of methods wiht consistent parameters
+* HEAD, GET, POST, PUSH, PUT, PATCH, DELETE
+* They all accept Headers, URL Parameters, ...
+
+urllib2 is Toxic
+Heavily over-engineered
+
+Yay Requests!
+
+If you find you have to go to the documentation everytime you sit down with a module, rewrite the module.
+
+Write the README.
+(Documentation Driven Development)
+
+Pivot!
+* At first, Requests was far from powerful
+* But, it deeply resonated with people
+* Features grew over time
+
+We need better APIs
+We want better APIs
+It's worth your time as a developer
+
+
+File and System Operations
+sys | shutils | os | os.path | io modules
+Really difficult to run external commands
+Blocks dev+ops folks
+
+
+Props to python-guide
+
+Simplify our APIs
+Document our activities
+
+
+
