@@ -281,6 +281,23 @@ Software users compared to sloths -- we can somehow get by with little documenta
 
 "Make happy sloths"
 
+Your users have multi-part stomachs.
 
+New users
+~~~~~~~~~
+
+* Assume nothing
+* Don't bury them in details (don't go heavy on the jargon)
+
+
+Experienced Users
+~~~~~~~~~~~~~~~~~
+* Assume a few things
+* Include plenty of links and cross-references
+* Give practical examples
+
+GAH! Battery dying.
+
+No more notes. Over and out.
 
 
