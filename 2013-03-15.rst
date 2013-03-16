@@ -236,5 +236,51 @@ d3 goes well beyond rgb
 
 Didn't imagine he was going to give a talk on D3.
 
+I totally need to build up some skill with D3 for my next data focused project.
+
+Yeeha SVG, JSON, and CSV.
+
+json is good for structured data
+json is bloated for tabular data
+
+# Tabular data in CSV
+# Structured data in JSON
+
+Datapoints
+----------
+name
+user
+
+rank
+watchers
+commits
+size
+
+earliest commit
+
+
+Oh data viz. Like writing, you're going to have to toss some.
+
+Chord diagram/Hairball diagram for networks.
+
+They looked at contributions across languages.
+
+The polyglots alone are pretty interesting.
+
+They're calling this the Polyglot Project (but it's not up on the web yet, and the name is taken by other projects too)
+
+
+Fri Mar 15 20:09:53 EDT 2013
+----------------------------
+
+Missed out on the Big Data Algorithms talk (well, part of it). He used bloomfilters to store graph data. I definitely need to watch the video from that talk.
+
+Now I'm at the write the docs talk.
+
+Software users compared to sloths -- we can somehow get by with little documentation and thrive, just as sloths don't need much food.
+
+"Make happy sloths"
+
+
 
 
