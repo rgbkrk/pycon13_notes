@@ -1,0 +1,54 @@
+Sun Mar 17 11:59:43 EDT 2013
+============================
+
+Just stepped in for the first keynote of the morning.
+
+PSF Chair, Van Lindberg.
+
+PyCon, PyCon, PyCon.
+
+I can't wait until the caffeine kicks in.
+
+surveymonkey.com/s/pycon2013
+
+
+2500 people
+Every state in the US
+Every continent, tons of countries
+20%+ women
+
+Poeople go to other conferences to get catered to, people come to PyCon to contribute.
+People come to PyCon to contribute, you
+
+
+The new Python.org (currently at preview.python.org) is entirely built in Python 3.3. They ported lots of libraries to get it all to work with Python 3.3.
+
+The entire site will be available on GitHub and accepting git requests.
+
+The Future of the PSF
+
+
+Sun Mar 17 12:14:58 EDT 2013
+============================
+
+Guido Van Rossum, BDFL
+
+Async I/O for Python 3
+
+asyncore: included batteries don't fit
+
+Guido had done lots of async design for Google App Engine
+
+Why Async IO?
+
+I/O is slow compared to other work
+* The CPU is not needed to do I/O
+
+
+
+
+
+
+
+
+
