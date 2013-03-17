@@ -253,6 +253,45 @@ Older version? Tough luck buddy.
 
 
 
+Sun Mar 17 17:01:11 EDT 2013
+============================
+
+Now in the Postgres Django talk.
+
+Just chatted with Bill Pollock of no starch press so I could thank them for releasing Python for Kids and Super Scratch Programming (I bought them for one of my nephews for Christmas).
+
+He was ecstatic. He told me Super Scratch Programming Adventure and Python for Kids have been bestsellers for the last few months (looked it up on Amazon currently #1 and #2 respectively in Introductory and Beginning Programming). We had a good chat about kids programming, and the right way to teach kids.
+
+Bill wants to find some great writers while he's here. I suggested he talk to Kenneth Reitz about python-guide. I certainly love it, and love referring others to it for awesome best practices (they keep changing). A lot of Python carpentry is not quite at the Zen of Python level, and it needs to be. I wouldn't mind a physical copy down the road.
+
+http://speakerdeck.com/pyconslides
+
+hstore looks sweet --> It links in with a package for django
+
+Postgres for Queueing?
+Kombu the typical backend for Queueing with Postgres.
+
+
+
+Sun Mar 17 17:30:51 EDT 2013
+============================
+
+
+MongoDB is doc-oriented, JSON-like, Dynamic Schema, Scalable, Open Source
+
+Install
+run daemon
+
+pymongo
+
+MongoClient
+
+host, port or uri connection string
+
+mongo will create things that don't exist almost automagically
+
+(and not report errors unless enabled...)
+
 
 
 
