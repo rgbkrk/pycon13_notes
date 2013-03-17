@@ -301,3 +301,10 @@ dirn.it/PyCon2013
 He's *eventually* going to put it up on speakerdeck.
 
 
+Sun Mar 17 19:09:15 EDT 2013
+============================
+
+@zestyping released q.q for "it just works" debug printing and tracing, the lazy I want to go to sleep way
+@weswinham released neckbeard for awesome deployments in one step
+
+
