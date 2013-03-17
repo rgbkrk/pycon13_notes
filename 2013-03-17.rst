@@ -44,6 +44,212 @@ Why Async IO?
 I/O is slow compared to other work
 * The CPU is not needed to do I/O
 
+Why not threads?
+Actually you may if they work for you?
+OS threads are relatively expensive
+ * Pre-emptive scheduling
+Max # open sockets >> max # threads
+  ...
+
+Async IO without threads
+select(), poll(), etc.
+asyncore :(
+write your own
+frameworks, e.g. Twisted, Tornado, zeroMQ
+Wrap existing C libraries libevent, libev, libuv -- many have Python bindings
+Stackless, gevent, geventlet
+
+
+Downsides
+Too many choices
+Nobody likes callbacks
+APIs not always easy
+Standard library doesn't cooperate
+
+
+So, about gevent...
+Scary implementation details
+ - x86 CPython specific stack-copying code
+Monkey Patching
+ - "patch and pray"
+Don't know when it task switches
+ - could be not enough
+ - could be unexpected
+
+Time for yet another standard framework to introduce
+
+At the bottom of all of these is an event loop
+ - (that is, all except OS threads)
+Event loop multiplexes I/O
+Various other features also common
+
+
+Why is the event loop special?
+* Serializes event handling
+  - Handle only one event at a time
+* There should be only one
+  - Otherwise it's not serializing events
+* Each framework has its own event loop API
+  - Even though the functionality has much overlap
+
+What functionality is needed?
+* Start, stop running the loop
+  - variant: always running
+* Schedule callback DT in the future (may be 0)
+  - also: repeated timer callback
+* Set callback for file descriptor when ready
+  - variant: call when I/O done
+
+
+Enter PEP 3156 and Tulip
+
+
+I know this is madness
+* Why can't we all just use Tornado?
+* Let's just import Twisted into the stdlib
+* Standardizing gevent solves all its problems
+  - No more monkey-patching
+  - greenlets in the language
+* Or maybe use Stackless Python?
+* Why reinvent the wheel?
+  - libevent/libevt/libuv all standard
+
+Again: PEP 3156 and Tulip
+I like to write clean code from scratch
+I also like to learn from others
+I really like clean interfaces
+PEP 3156 and Tulip satisfy all my cravings
+
+
+"Looked at Tornado and noticed they were doing a lot of what I was doing. Some of the things they did I incorporated. There were dubious design decisions I skipped over."
+
+Also looked at Twisted
+
+Transports and Protocols
+
+
+What is PEP 3156? What is Tulip?
+PEP 3156:
+- Standard event loop interface
+- Slated for Python 3.4
+Tulip:
+- Experimental prototype (currently)
+- Reference implementation (eventually)
+- Additional functionality (maybe)
+- Works with Python 3.3 (always)
+
+PEP 3156 is not just an event loop
+* It's also an interface to change the event loop implementation (to another conforming one)
+  - This is the path to framework interop
+  - (even gevent!)
+* It also proposes a new way of writing callbacks
+  - (that doesn't actually ...
+
+Two PEPs?
+
+
+But first, the event loop
+* Influenced by both Twisted and Tornado
+* Reviewed by (some) other stakeholders
+* ...
+
+Event loop method groups
+* starting/stopping the loop
+* basic callbacks
+* I/O callbacks
+* thread interactions
+* socket I/O operations
+* higher-level ...
+
+
+..
+  run()
+  run_forever()
+   ...
+
+..
+   call_soon(callback, *args)
+   call_later(callback, *args)
+   call_repeatedly(callback, *args)
+
+
+..
+   add_reader(fd, callback, *args) -> Handler
+   remove_reader(fd)
+
+
+Futures???
+new in Python 3.2
+
+..
+   from concurrent.futures import Future
+
+
+coroutines
+
+
+
+Where PEP 3148 needs ...
+
+PEP 380
+yield from
+
+magic: block task but don't block application
+
+P.S. @coroutine/yield-from are very close to async/await in C#
+
+
+
+
+How to think about Futures
+* Most of the time you can forget they are there
+* Just pretend that:
+   data = yield from <function_returning_future>
+  is equivalent to:
+   data = <equivalent_blocking_function>
+  ... and keep calm and carry on
+* Also forget about result(), exception() and done() callbacks
+
+
+yield from instead of yield
+
+Coroutines
+yield from must be used inside a generator
+Use @coroutine decorator to indicate that you're using yield from to pass Futures
+Coroutines are driven by the yield from
+Without yield-from a coroutine doesn't run
+
+What if you want an autonomous task?
+
+Back to higher-level network ops
+* Consider:
+  - loop.create_connection...
+
+
+Wait, transports and protocols?!
+(I really have been brainwashed by glyph)
+PEP 3153 (async I/O) explains why transport and protocol is the right abstraction
+
+
+Datagram potocol under development
+Various types of locks
+Talked of incorporating Requests in for HTTP (audience clapped)
+
+
+
+When can I have it?
+* Tulip works but is in flux and undocumented
+* PEP 3156 still to be reviewed throughly
+* Push to be ready for Python 3.4 (Feb 2014)
+  - 3.4.0 beta 1 cutoff date Nove 23, 2013
+    ...
+
+
+The rest of stdlib...
+* We'll start thinking about that in earnest once 3.4 is out the door
+* We may eventually have to deprecate ...
+
+Older version? Tough luck buddy.
 
 
 
