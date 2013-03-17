@@ -292,8 +292,12 @@ mongo will create things that don't exist almost automagically
 
 (and not report errors unless enabled...)
 
+Just noticed his slides aren't available (or I can't find them) on speakerdeck.com, but he does have the rst on github.
 
+Props to gridfs
 
+dirn.it/PyCon2013
 
+He's *eventually* going to put it up on speakerdeck.
 
 
