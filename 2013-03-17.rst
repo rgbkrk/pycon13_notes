@@ -304,7 +304,17 @@ He's *eventually* going to put it up on speakerdeck.
 Sun Mar 17 19:09:15 EDT 2013
 ============================
 
-@zestyping released q.q for "it just works" debug printing and tracing, the lazy I want to go to sleep way
+Lightning Talks
+
+@zestyping released q.q for "it just fucking works" debug printing and tracing, the lazy I want to go to sleep way
 @weswinham released neckbeard for awesome deployments in one step
+@ehmatthes wants to put education under version control
+
+python anywhere - super fucking animated
+
+Rapydscript - translating python to javascript... eh. Looks like it worked well for what he was doing. Bonus points for him -- he ported Chip's challenge.
+
+pycon-au.org CFP -- "need less Bruce's"
+
 
 
