@@ -8,3 +8,84 @@ It's really too bad the PaaS providers don't have an interface that is common en
 I also contributed some quick little changes to python-guide (grammar, spelling). I spent more time reading than editing. ;)
 
 This morning I'm geared up and ready to go to PyData.
+
+Tue Mar 19 12:03:49 EDT 2013
+============================
+Keynote of the morning was *the* Peter Norvig, the Director of Research at Google. His talk was titled "Learning Python".
+
+He wrote "Artificial Intelligence: A Modern Approach"
+
+Originally, all the code examples were lisp. He wanted to add something closer to pseudo-code. I think you can guess the final choice...
+
+Benjamin Bloom's paper
+
+"The average under tutoring [with mastery learning] was about 2 standard deviations above the average of the control." - Benjamin Bloom, 1984
+
+2 minutes of AI learning
+
+Massive classes
+
+Analyzing Intro CS MOOC Data 101
+
+His big idea:
+We should do for syntax errors what Google does for search queries.
+
+.. code:
+       if x = 1:
+            ^
+   SyntaxError: invalid syntax
+
+Should instead say:
+
+.. code:
+       if x = 1:
+            ^
+   SyntaxError: use == to check equality, = for assignment
+
+
+Attractive Nuisance
+
+Warnings for [[]]*5
+
+# Premature optimization: code blocking I/O
+
+He wrote a chaining class that forces functions that don't return the called object to return the object that called it... Hrmmm...
+
+Why do students stay or go?
+
+Motivation, not information
+
+Willpower
+Due dates
+Peer support (forums, outside groups)
+Faculty encouragement (email)
+Pride of accomplishment
+Authenticity
+Early adopter
+
+
+Stanford AI Course
+Coursera course
+
+
+ramp up + exponential decay + due dates
+
+synchronous, evergreen, semi-synchronous, bus route
+
+bus route -- cohort of students starting today
+If something comes up, you can get off the bus and then hop back on that bus stop again.
+
+Express bus, local bus.
+
+Untrain the "if I put something wrong into the computer, the computer will error"
+# This theme comes up all the freaking time with computer science. We need a cultural change.
+
+
+
+
+
+
+
+
+
+
