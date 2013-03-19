@@ -468,9 +468,16 @@ Regression and Random Forests
 - They support it as well
 
 
+Tue Mar 19 18:25:28 EDT 2013
+============================
 
+https://speakerdeck.com/ogrisel/scaling-machine-learning-in-python
 
+Olivier Grisel is presenting on Scaling Machine Learning in Python
 
+I really need to try out IPython Parallel with EC2.
+
+For my upcoming Machine Learning/Data Mining/Statistical Classification and Clustering course, I'm going to push to use Python+Pandas+sklearn+etc. for the entire course.
 
 
 
