@@ -284,4 +284,113 @@ Dictionary
 
 
 
+Multiple URLs comprising an array
+
+Distributed Arrays (machines)
+
+URLs provide bytes
+
+
+Blaze data container
+
+Indexes allow for many orderings (of access)
+
+
+Advanced Types
+
+  ...
+
+
+Blaze Agents
+CSV Directory
+MongoDB
+
+
+Hard scheduling problems, distribution problems
+
+
+Tue Mar 19 16:19:50 EDT 2013
+============================
+
+The Hadoop file system (HDFS)
+Large distributed file system
+Thousands of nodes, PBs of data
+Storage layer for Apache Hive, HBase
+
+MapRedue
+Idea: ship the code to the data not the other way around
+Do aggregations locally
+Iterate on results
+Map phase: process the input records, emit a key & a value
+Reduce phase: collect records with the same key from Map, emit a new (aggregate) record
+Fault tolerance
+Both storage and compute are fault tolerant (redundancy, replication, restart)
+
+
+
+Hadoop in practice means...
+Have to write Java
+Have to translate problems to Map Reduce
+Hard to maintain and make changes in the topology
+
+Best used for
+Archiving (HDFS)
+Batch processing (MR)
+
+Cascading in terms of flows
+
+semi-structured flow processing of tuples with typed fields
+
+Analogy: data is flowing in pipes
+Input comes from source taps
+Output goes to sink taps
+Data is reshaped in the pipes by different operations
+
+Builds a DAG from the job and optimizes the topology to minimize the number of MapReduce phases
+
+
+PyCascading
+
+cascading.org
+
+This trip has been humbling.
+
+
+PyCascading
+Design
+Built on top of Cascading
+Uses the Jython 2.5 interpreter
+Everything in Python
+- Building the pipelines
+- User-defined functions that operate on data
+Completely hides Java if the user wants it to
+- However...
+
+
+WordCount example, as always
+
+pycascading truly minimizes programmer effort
+
+Basics of writing a cascading flow in Python
+
+There is one main script that must contain a main() function
+We build the pipeline in main()
+Pipes are joined together with the pipe operator |
+- Pipe ends may be assigned to variables and reused (split)
+All the user defined operations are Python functions
+- Globally or locally scoped
+Then submit the pipeline to be run to PyCascading
+
+
+  ...
+
+http://www.cascading.org/documentation/
+https://github.com/twitter/pycascading
+
+The joins and field algebra are pretty neat.
+
+
+
+
+
 
