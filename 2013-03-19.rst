@@ -107,5 +107,70 @@ Data, privacy, and anonymization are recurring themes. How does one generate dat
 
 
 
+Tue Mar 19 13:26:18 EDT 2013
+============================
+
+Time for "Python in an evolving enterprise system"
+
+Ad bidding in milliseconds
+
+AppNexus has really evolved in the last few years.
+
+
+Data-Driven Decisioning team
+
+
+"Python enables us to scale our team and rapidly iterate and prototype technologies"
+
+
+AppNexus sounds pretty awesome.
+
+They built up a huge Hadoop cluster.
+
+1PB Cluster
+862 Nodes
+
+I want these slides.
+
+Definitely looking forward to all these talks going online.
+
+Big Data: TBs/Hr
+Medium Data: GBs/Hr
+
+
+"*To enable the next generation* of data modeling, we need to leverage the Hadoop cluster"
+
+Access the data on Hadoop
+
+The budget problem
+We have thousands of bidders buying billions of ads per hour in real time auctions.
+
+We need to create a model that can manipulate how our bidders spend their budgets and purchase ads.
+
+Someone is wearing a fragrance that is *hurting my nose and giving me a headache*. I'm going to steer clear of them throughout the conference.
+
+Research: Potential Solutions for Python on Hadoop
+
+.. role:: strike
+    :class: strike
+
+Native Java
+Streaming - no framework
+mrjob
+Happy/Jython/PyCascading
+Pig + Jython UDF
+:strike: `Pydoop` prohibitive installation
+:strike: `Disco evaluating` Hadoop
+:strike: `Hadoopy / dumbo` similar to mrjob
+:strike: `Hipy` Effectively ORM for Hive
+
+Research: Criteria
+
+Usability
+Performance
+Versatility/Flexibility
+
+They go through all the frameworks and their benefits.
+
 
 
