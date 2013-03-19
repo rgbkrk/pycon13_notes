@@ -399,7 +399,18 @@ wise.io talk
 
 wiseRF, machine learning, and Raspberry Pi
 
+Python Bootcamps at Berkeley for Scientists and Students
+# Neat!
 
+ML in Python
+scikit-learn for ML
+pandas for data munging
 
+ML pain points I
+data scientists
+- Data is messy
+- Hard to scale non-linear algorithms to large datasets
+- Ad-hoc feature engineering
+- Collaboration on data, features and models is difficult
 
 
