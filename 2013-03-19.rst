@@ -464,6 +464,13 @@ Cross that barrier of data science/experiments        to   Production
 Python, R                                                     Java
 
 
+Regression and Random Forests
+- They support it as well
+
+
+
+
+
 
 
 
