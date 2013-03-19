@@ -204,6 +204,7 @@ Side note from Travis Oliphant:
 You should not be using Jython, it blocks you from using Numpy and Pandas.
 
 Use Py4J or ...
+Tue Mar 19 17:10:22 EDT 2013
 
 Blaze
 ~~~~~
@@ -389,6 +390,14 @@ https://github.com/twitter/pycascading
 
 The joins and field algebra are pretty neat.
 
+
+
+Tue Mar 19 17:10:30 EDT 2013
+============================
+
+wise.io talk
+
+wiseRF, machine learning, and Raspberry Pi
 
 
 
