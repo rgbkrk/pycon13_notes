@@ -173,4 +173,115 @@ Versatility/Flexibility
 They go through all the frameworks and their benefits.
 
 
+mrjob wraps Hadoop Streaming
+
+PyCascading looks awesome
+Python wrapper around Cascading framework for data processing workflow
+Uses Jython as a high level ...
+
+Yeeha
+
+Onto Pig
+
+Lots of similarities to cascading
+
+Focus on data transformations
+
+High level language is pig latin, compiles to a jar of map reduces
+
+Question time
+~~~~~~~~~~~~~
+
+Can you do decision trees or clustering on Hadoop? (Mahout, etc.)
+
+
+
+Tue Mar 19 14:10:51 EDT 2013
+============================
+
+Side note from Travis Oliphant:
+
+You should not be using Jython, it blocks you from using Numpy and Pandas.
+
+Use Py4J or ...
+
+Blaze
+~~~~~
+
+"What we're pursuing with Blaze."
+This is not a talk on what you can pursue tomorrow.
+
+History of Numpy
+~~~~~~~~~~~~~~~~
+Matrix Object in Python -> Numeric -> Numarray -> NumPy
+
+Hadoop still doesn't have the tools necessary for scientific computing
+
+Numpy is the center of big community.
+
+DATASETS ARE GROWING!!!
+
+How do we do this while dealing with data across a network?
+
+What's great about Numpy?
+Array oriented
+Extensive DType System (including systems)
+- vs. Avro, Protobufs
+C-API lots of libraries
+Simple to understand data structure
+Memory mapping
+Syntax support from Python
+Large community of users
+Ufuncs and more
+Broadcasting
+Easy to interface C/C++/Fortran code
+
+
+What is wrong with NumPy
+Dtype system is difficult to extend
+Immediate mode creates huge temporaries
+Almost an in-memory data-base comparable to SQL-lite (missing indexes)
+Integration with sparse arrays (SciPy slightly has this)
+Lots of un-optimized parts
+Minimal support for multi-core/GPU
+
+Lots of improvements to NDArray needs to be made
+
+Dtype improvements
+Enumerated types
+JSON to specify
+
+Numpy + PyTables --> Blaze (out of Core, Distributed and Optimized NumPy)
+
+Blaze is a new project to explore these ideas
+
+"NumPy array is a decorated pointer"
+# Sounds like a defined struct ;)
+
+Blaze: Different kinds of Arrays
+
+                               Indexable
+              (Record Type)                (Primitive Type)
+                NDTable                       NDArray
+         Deferred     Concrete         Deferred     Concrete
+
+
+
+Deferred allows handling large arrays
+
+Can be handled out of core using chunks to stream through memory
+
+
+Blaze Concrete Array
+Data Descriptor (where are these bytes?)
+URL, URL, URL, URL --> Indexes
+
+DataShape
+Extensible Type System which includes shape
+
+MetaData
+Dictionary
+
+
+
 
