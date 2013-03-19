@@ -413,4 +413,57 @@ data scientists
 - Ad-hoc feature engineering
 - Collaboration on data, features and models is difficult
 
+Good old real world data...
+
+Noisy, imbalanced, missing values, heterogeneous
+
+Random Forest!
+
+In existence for 20 years, now becoming a really popular way to model
+
+I need to find his slides, if available
+
+WiseRF Oak - Fast and efficient nonlinear Machine Learning now available
+
+Put sensors on your embedded devices and update your model on the fly.
+
+Fast vs Scalable
+
+"Internet of Things"
+
+
+ML pain points II
+application developers
+
+Statistical validation of models
+
+Machine Learning as a Service
+
+Upload Data -------------------------------> Build Models
+             \-- Feature engineering --/
+
+
+Collaborate in GitHub like environment with your models.
+
+
+Feature engineering
+
+
+Full dataset --> wi -------> local subset <--> data science
+                  \- git push rsync -/
+
+
+
+ML pain points III
+Scalable infrastructure required
+Hard to go from data science experiments to production
+Complete privacy/security
+
+
+Cross that barrier of data science/experiments        to   Production
+Python, R                                                     Java
+
+
+
+
 
