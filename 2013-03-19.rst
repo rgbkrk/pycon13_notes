@@ -80,10 +80,30 @@ Express bus, local bus.
 Untrain the "if I put something wrong into the computer, the computer will error"
 # This theme comes up all the freaking time with computer science. We need a cultural change.
 
+TDD for teaching
 
 
+Do we trust bloom?
 
 
+Many types of Individualization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Student control over rewind (multiplay)
+Student choice over ...
+
+Students shouldn't feel restricted from performing on the computer.
+
+Transcripts are low bandwidth information on
+
+
+I wonder if there are any large pseudo-anonymized data stores of (post-graduation) transcript grades
+
+One-on-one tutoring, machine learning
+large scale courseware engineering
+social; motivation
+machine learning, continual improvement
+
+Data, privacy, and anonymization are recurring themes. How does one generate datasets we can reliably let others use without damning the individuals the data came from? It seems like there really isn't a way without losing a lot of the features that matter. People will always find ways to creatively point back to a user with enough aggregate information.
 
 
 
