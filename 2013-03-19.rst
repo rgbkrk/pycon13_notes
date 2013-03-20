@@ -531,3 +531,10 @@ In Linux land, you'll need to:
    canvas.run(draw)
 
 
+Tue Mar 19 20:55:12 EDT 2013
+============================
+
+Lightning Talks
+
+LULESH -- they ported some C++ code to Python, used Numba, generally kicked ass
+
