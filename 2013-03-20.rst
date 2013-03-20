@@ -26,3 +26,31 @@ The lifecycle of a scientific idea (schematically)
 5. Education
 6. Goto 1.
 
+Speaking the IPython protocol.
+
+I really hope the issues with security and the IPython notebook turn into an OK balance, because right now you have to implicitly trust IPython notebooks shared with you. This doesn't just mean trusting the person who sent it to you/created it, it also means trusting their systems/networks.
+
+At the very least, I would want to make sure code was signed well in advance. Doesn't solve everything, but would help mitigate some strains of jerks.
+
+Pandas + IPython notebook
+Wow. Instant HTML sweetness.
+
+LaTeX rendering + SymPy support
+
+.. code-block: python
+   from IPython.display import Latex
+
+He also showed how to use R *within* IPython, using data held in Python via IPython.
+
+In the last few days, Julia integration with IPython. Wow.
+
+Numba, Numpy and Julia: some naive comparisons
+Julia not very good for array processing -- good at "loopy" code
+
+The notebook viewer is totally awesome. I need to see if I can make a version that is PaaS provider agnostic, or at least has options for others, like dotCloud, OpenShift, etc.
+
+Python for signal processing -- notebooks available. Looks sweet.
+
+
+
+
