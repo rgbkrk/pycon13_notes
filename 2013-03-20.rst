@@ -61,4 +61,62 @@ Produce Markdown, reST, LaTeX, HTML, etc....
 
 **An open format for *sharing, publishing* and archiving executable computational work**
 
+Documented protocols and formats, letting others add on.
+
+Microsoft Visual Studio 2010 added integration
+
+A vim client to control IPython kernel/console
+
+They all speak the IPython protocol
+
+IPython notebook on Windows Azure
+
+# Props to you Microsoft
+
+Star cluster: IPython parallel + Notebook on Amazon EC2
+
+Good funding all around to keep IPython going, growing, advancing
+
+Academia vs. Open Source
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Enthought: Austin, TX -- Lots!
+Microsoft: WinHPC support, Visual Studio integration, ...
+DoD,DARPA
+NIH
+  ...
+
+Reward structure in academia: we punish all of the above
+
+Departmental boundaries: interdisciplinary work is a great buzzword but...
+
+I need to find his slides. I also need to see what I can put together to chat with devs back home to move us forward.
+
+2014: Multiuser server, simple to deploy, already in trusted environment
+
+
+Wed Mar 20 13:09:48 EDT 2013
+============================
+
+Onto the "Data Wrangling Kung Fu with Pandas" talk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
