@@ -99,24 +99,50 @@ Wed Mar 20 13:09:48 EDT 2013
 ============================
 
 Onto the "Data Wrangling Kung Fu with Pandas" talk
+Wes McKinney - Primary author of Pandas
+@wesmckinn
+
+Just published "Python for Data Analysis" with O'Reilly in October.
+- How to use tools for analysis
+"Data Analysis with Open Source Tools"
+- How to do analysis (aided by open source tools)
+
+Started pandas in 2008. Worked at a hedge fund that eventually let him release it as an open source project.
+
+Also a contributor to statsmodels
 
 
+Observations
+~~~~~~~~~~~~
+Data often in wrong format for analysis
+Storage format frequently not Analysis format
+Data preparation bottleneck in many workflows
+
+Lots o' munging
+
+From his slides:
+
+.. image:: http://weknowmemes.com/wp-content/uploads/2012/03/fuck-this-shit.jpg
 
 
+Pandas
+~~~~~~
 
+Productivity-focused structured data manipulation tools for Python
+Fast, intuitive data structures
+Filling the gap between Python and more domain specific languages in R
+Huge growth in 2011-2012, continuing in 2013
 
+Data reshaping
+Hierarchical indexinng
+Groupby
+  ...
 
+Time to look at data and hit the code
 
+Pandas has some good pivot stuff.
 
+series object exposes str so you can do string ops
 
-
-
-
-
-
-
-
-
-
-
+Pandas cut function - discretizes a continuous variable
 
