@@ -1,0 +1,28 @@
+Wed Mar 20 12:05:42 EDT 2013
+============================
+
+Last day.
+
+Keynote on IPython
+
+Beyond (floating point) number crunching
+
+The purpose of computing is insight, not numbers.
+
+The computer as a microscope
+Exploratory: Problem's definition evolves as we understand it
+No 'requirements' to build an application against
+Mathematica, Maple, Matlab, IDL, etc.
+ - All have an interactive environment
+
+   Applications        Languages
+  (Tie Fighter)         (Legos)
+
+The lifecycle of a scientific idea (schematically)
+1. Individual exploratory work
+2. Collaborative development
+3. Parallel production runs (HPC, cloud, ...)
+4. Publication (with reproducible results!)
+5. Education
+6. Goto 1.
+
