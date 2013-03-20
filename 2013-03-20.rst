@@ -51,6 +51,14 @@ The notebook viewer is totally awesome. I need to see if I can make a version th
 
 Python for signal processing -- notebooks available. Looks sweet.
 
+Pillars for the notebook format
 
+JSON but version control friendly
+Easy for machine processing, fixable by hand if need be
+Lots of hooks for metadata
+Not Python-specific (Ruby, JS notebooks exist, R, Julia planned)
+Produce Markdown, reST, LaTeX, HTML, etc....
+
+**An open format for *sharing, publishing* and archiving executable computational work**
 
 
