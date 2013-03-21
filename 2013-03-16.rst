@@ -186,7 +186,7 @@ numfocus
 * Attribute lookups
 * Numpy get-item
 
-"I like to go to stack overflow, find slow Python code and do it well in numpy to demonstrate the real speed"
+"I like to go to stack overflow, find slow Python code, do it well in numpy, add Numba's autojit decorators and demonstrate real speed"
 
 What are Scientists doing Now?
 
@@ -231,20 +231,14 @@ Face of a modern compiler
 
 @numba.autojit
 
-
 Holy fuck.
 
-
 Numpy + Mamba = Numba
-
-
 
 Python Function -> LLVMPY -> Machine Code
                 LLVM Library
 
-
-buffer protocol ...
-
+buffer protocol...
 
 Simple API to turn Python into
 
@@ -252,9 +246,7 @@ Typed containers help here
 
 decorators to use numba's jit
 
-
 Big idea -- compile python, get ridiculous speedups
-
 
 Numba under the hood
 
@@ -266,24 +258,19 @@ Numba architecture
   - .../numba/decorators.py
 * ...
 
-
-
 Better Array Specialization
 * This is where they need the most love
-
 
 numba-users@continuum.io
 
 Sprints on Sunday
 
-
-
 How could you use this to speed up work with dataframes?
-
-
 
 Sat Mar 16 19:33:52 EDT 2013
 ============================
+
+Kenneth Reitz's Python for Humans Talk
 
 Open Source ALL the things!
 
@@ -297,7 +284,7 @@ Python for Humans
 
 Let's Break it Down
 What is HTTP at its core?
-* A small set of methods wiht consistent parameters
+* A small set of methods with consistent parameters
 * HEAD, GET, POST, PUSH, PUT, PATCH, DELETE
 * They all accept Headers, URL Parameters, ...
 
@@ -306,7 +293,7 @@ Heavily over-engineered
 
 Yay Requests!
 
-If you find you have to go to the documentation everytime you sit down with a module, rewrite the module.
+If you find you have to go to the documentation every time you sit down with a module, rewrite the module.
 
 Write the README.
 (Documentation Driven Development)
@@ -320,17 +307,16 @@ We need better APIs
 We want better APIs
 It's worth your time as a developer
 
-
 File and System Operations
 sys | shutils | os | os.path | io modules
 Really difficult to run external commands
 Blocks dev+ops folks
 
+# I feel like Fabric takes us there partly...
+# Perhaps I'll have to think about these
 
 Props to python-guide
 
 Simplify our APIs
 Document our activities
-
-
 
