@@ -176,6 +176,16 @@ Requested help.
 
 
 
+Guy gave a talk on a classification problem he had.
+
+Lots of little classifiers rather than *one big* classifier.
+
+He used scrapy to acquire a lot of his data.
+
+TF-IDF?
+
+
+
 
 
 
