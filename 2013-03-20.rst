@@ -146,3 +146,41 @@ series object exposes str so you can do string ops
 
 Pandas cut function - discretizes a continuous variable
 
+Wed Mar 20 19:02:03 EDT 2013
+============================
+
+Currently in the Disney talk.
+
+FastPipe - serves up data from all of their games in realtime
+
+Self provisioning
+
+We shouldn't do clustering for everything.
+
+David Schaeter
+
+Design for reliability
+
+
+Wed Mar 20 20:06:25 EDT 2013
+============================
+
+Lightning talks
+
+Integrating Relational Databases into IPython Notebook
+@nitin
+
+Postgres magic -- wrapped on top of psychopg2
+
+Requested help.
+
+
+
+
+
+
+
+
+
+
+
