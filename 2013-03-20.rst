@@ -184,7 +184,7 @@ He used scrapy to acquire a lot of his data.
 
 TF-IDF?
 
-
+PyLadies DC -- Perhaps C would want to join up
 
 
 
