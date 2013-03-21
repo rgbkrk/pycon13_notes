@@ -1,9 +1,11 @@
 Sat Mar 16 12:24:56 EDT 2013
 ============================
 
-Just watched a guy extend the code module.
+Just watched a guy extend the code module. The code module emulates the interactive Python interpreter, and gives you flexibility to extend it.
 
 In his words, "Don't make people watch you code"
+
+Ha. That's what you need the vim plugin keyboard_cat.vim for. :)
 
 Sat Mar 16 12:32:21 EDT 2013
 ============================
@@ -13,12 +15,90 @@ Khan Academy Lite - Access to Khan academy resources from a disconnected network
 Offline Commons
 Open content, offline, let it be shared offline.
 
+This is big. I want to help them out. I need to get in touch with them.
+
 
 Sat Mar 16 17:40:21 EDT 2013
 ============================
 
-Attended the deployment talk. Notes on Droid. Will post later.
+Python Deployment talk.
 
+Pip-tools
+
+Right on track with virtualenv.
+
+Check out from ${source control}
+Create virtualenv
+Install dependencies
+Do whatever
+Package it up
+Deploy
+
+Run tests
+Less/sass/coffeescript
+Compression
+Cache bursting
+
+Fpm?
+
+Repo server
+
+Automate!
+
+Parcel?
+
+Fabric + git is what most go with
+
+Now for configuration
+
+Configuration management system
+Declarative
+Describe the goal
+M...
+
+Chef, salt stack, puppet
+
+All reek terribly of Ruby
+Not easy at all
+
+Safety/security
+Reproducible
+"Later"
+
+Privileged ports
+
+SSL everywhere
+
+Failtoban
+
+Up!
+upstart
+systemd
+supervisord
+circus
+
+Apache + mod_wsgi
+-- NO!
+
+Iff you absolutely need it
+
+Don't need those rockets (he showed a picture of an Apache helicopter)
+
+micro-wsgi or gunicorn + nginx
+
+Better separation of concerns
+
+gunicorn, gunicorn, gunicorn
+
+What about monitoring?
+Nagios, pingdom
+
+Measure
+Statsd, metrics?, scales, ganglia, graphite
+
+Collect all of them.
+
+@hynek
 
 Sat Mar 16 17:41:10 EDT 2013
 ============================
