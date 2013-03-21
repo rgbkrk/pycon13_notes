@@ -1,15 +1,14 @@
 Fri Mar 15 13:55:11 EDT 2013
 ============================
 
-Instagram talk now.
+PyCon has now started, and we all got Raspberry Pis.
 
-Redis db
+Instagram
+~~~~~~~~~
 
-Async background broker
+Originally, their architecture was Redis DB with an Async background broker. (He didn't say how their broker was built -- MQ like?)
 
 "Justin Bieber problem"
-
-(Didn't say how their broker was built -- MQ like?)
 
 Oh. They're using Gearman.
 
@@ -143,8 +142,6 @@ First up, reStructuredText is awesome.
 
 "Issue roles for simplicity" -- makes you tied to the design of your text, but gives you programmability and agility
 
-
-
 Fri Mar 15 17:47:57 EDT 2013
 ============================
 
@@ -156,9 +153,9 @@ Thanked Kenneth Reitz for python-guide.
 
 Walked in late to the GitHub visualization talk
 
-tmux - terminal multiplexer
+tmux - terminal multiplexer -- why wasn't I using this before?!?
 
-We used MongoDB for data crunching on a budget.
+"We used MongoDB for data crunching on a budget."
 
 Network
 ~~~~~~~
@@ -180,14 +177,14 @@ Idempotency -- *Do* Repeat Yourself (without shooting yourself in the foot)
 
 # Definitely going to need to watch this over -- I want to see their overall infrastructure
 
-Oh holy crap, they're making their data available. We need to grab that!
-
+Oh holy crap, they're making their data available. We need to grab that for the code modeling project!
 
 Fri Mar 15 18:13:44 EDT 2013
 ============================
 
 Visualization of GitHub
 
+The author made (or works on)
 umbrella.io
 pushpin
 Mixpanel for geo
@@ -221,8 +218,6 @@ One size fits nobody.
 Their audience
 ^ Know about github
 ^ Passing knowledge of coding
-
-
 
 processing.js -- written by jQuery guy
 Logo for the modern computer
@@ -258,7 +253,6 @@ size
 
 earliest commit
 
-
 Oh data viz. Like writing, you're going to have to toss some.
 
 Chord diagram/Hairball diagram for networks.
@@ -275,7 +269,7 @@ Fri Mar 15 20:09:53 EDT 2013
 
 Missed out on the Big Data Algorithms talk (well, part of it). He used bloomfilters to store graph data. I definitely need to watch the video from that talk.
 
-Now I'm at the write the docs talk.
+Write the docs talk. Django core author.
 
 Software users compared to sloths -- we can somehow get by with little documentation and thrive, just as sloths don't need much food.
 
@@ -296,13 +290,5 @@ Experienced Users
 * Include plenty of links and cross-references
 * Give practical examples
 
-GAH! Battery dying.
-
-No more notes. Over and out.
-
-And I'm back.
-
 "Tools come and go -- focus on the writing."
-
-
 
