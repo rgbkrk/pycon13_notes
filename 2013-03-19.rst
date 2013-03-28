@@ -108,12 +108,9 @@ Ad bidding in milliseconds
 
 AppNexus has really evolved in the last few years.
 
-
 Data-Driven Decisioning team
 
-
 "Python enables us to scale our team and rapidly iterate and prototype technologies"
-
 
 AppNexus sounds pretty awesome.
 
@@ -122,24 +119,21 @@ They built up a huge Hadoop cluster.
 1PB Cluster
 862 Nodes
 
-I want these slides.
-
-Definitely looking forward to all these talks going online.
+I want these slides. Definitely looking forward to all these talks going online.
 
 Big Data: TBs/Hr
 Medium Data: GBs/Hr
-
 
 "*To enable the next generation* of data modeling, we need to leverage the Hadoop cluster"
 
 Access the data on Hadoop
 
 The budget problem
+~~~~~~~~~~~~~~~~~~
+
 We have thousands of bidders buying billions of ads per hour in real time auctions.
 
 We need to create a model that can manipulate how our bidders spend their budgets and purchase ads.
-
-Someone is wearing a fragrance that is *hurting my nose and giving me a headache*. I'm going to steer clear of them throughout the conference.
 
 Research: Potential Solutions for Python on Hadoop
 
@@ -162,16 +156,11 @@ Usability
 Performance
 Versatility/Flexibility
 
-They go through all the frameworks and their benefits.
-
-
 mrjob wraps Hadoop Streaming
 
 PyCascading looks awesome
 Python wrapper around Cascading framework for data processing workflow
-Uses Jython as a high level ...
-
-Yeeha
+Uses Jython as a high level ... Yuck. That locks you out of working with CPython
 
 Onto Pig
 
@@ -186,17 +175,20 @@ Question time
 
 Can you do decision trees or clustering on Hadoop? (Mahout, etc.)
 
-
+GTFO
 
 Tue Mar 19 14:10:51 EDT 2013
 ============================
 
 Side note from Travis Oliphant:
 
-You should not be using Jython, it blocks you from using Numpy and Pandas.
+You should not be using Jython, it blocks you from using CPython, and in
+particular Numpy and Pandas.
 
 Use Py4J or ...
+
 Tue Mar 19 17:10:22 EDT 2013
+============================
 
 Blaze
 ~~~~~
@@ -228,7 +220,6 @@ Large community of users
 Ufuncs and more
 Broadcasting
 Easy to interface C/C++/Fortran code
-
 
 What is wrong with NumPy
 Dtype system is difficult to extend
@@ -264,18 +255,15 @@ Deferred allows handling large arrays
 
 Can be handled out of core using chunks to stream through memory
 
-
 Blaze Concrete Array
 Data Descriptor (where are these bytes?)
 URL, URL, URL, URL --> Indexes
 
 DataShape
-Extensible Type System which includes shape
+   Extensible Type System which includes shape
 
 MetaData
-Dictionary
-
-
+   Dictionary
 
 Multiple URLs comprising an array
 
@@ -283,21 +271,17 @@ Distributed Arrays (machines)
 
 URLs provide bytes
 
-
 Blaze data container
 
 Indexes allow for many orderings (of access)
-
 
 Advanced Types
 
   ...
 
-
 Blaze Agents
 CSV Directory
 MongoDB
-
 
 Hard scheduling problems, distribution problems
 
@@ -318,8 +302,6 @@ Map phase: process the input records, emit a key & a value
 Reduce phase: collect records with the same key from Map, emit a new (aggregate) record
 Fault tolerance
 Both storage and compute are fault tolerant (redundancy, replication, restart)
-
-
 
 Hadoop in practice means...
 Have to write Java
