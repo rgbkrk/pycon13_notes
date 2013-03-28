@@ -17,13 +17,11 @@ He wrote "Artificial Intelligence: A Modern Approach"
 
 Originally, all the code examples were lisp. He wanted to add something closer to pseudo-code. I think you can guess the final choice...
 
-Benjamin Bloom's paper
-
 "The average under tutoring [with mastery learning] was about 2 standard deviations above the average of the control." - Benjamin Bloom, 1984
 
-2 minutes of AI learning
+Think about doing AI Learning in 2 minutes segments.
 
-Massive classes
+He ended up having massive classes
 
 Analyzing Intro CS MOOC Data 101
 
@@ -42,6 +40,8 @@ Should instead say:
             ^
    SyntaxError: use == to check equality, = for assignment
 
+What's holding him back from submitting patches to the Python interpreter to
+include this?
 
 Attractive Nuisance
 
@@ -49,9 +49,9 @@ Warnings for [[]]*5
 
 # Premature optimization: code blocking I/O
 
-He wrote a chaining class that forces functions that don't return the called object to return the object that called it... Hrmmm...
+He wrote a chaining class that forces functions that don't return the called object to return the object that called it (constraining the environment for students).
 
-Why do students stay or go?
+Why do students stay or go (with respect to his classes)?
 
 Motivation, not information
 
@@ -63,38 +63,30 @@ Pride of accomplishment
 Authenticity
 Early adopter
 
-
 Stanford AI Course
 Coursera course
-
 
 ramp up + exponential decay + due dates
 
 synchronous, evergreen, semi-synchronous, bus route
 
 bus route -- cohort of students starting today
-If something comes up, you can get off the bus and then hop back on that bus stop again.
+If something comes up, you can get off the bus and then hop back on that bus stop again. This is a great idea. The motivation to stay on the bus then is to stay with your companions. The nice thing is that if you have to get off, you can. Just hop back on the bus later.
 
-Express bus, local bus.
+Express bus, local bus. Yes, please give me the express bus.
 
 Untrain the "if I put something wrong into the computer, the computer will error"
 # This theme comes up all the freaking time with computer science. We need a cultural change.
 
 TDD for teaching
 
-
-Do we trust bloom?
-
-
 Many types of Individualization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Student control over rewind (multiplay)
-Student choice over ...
 
 Students shouldn't feel restricted from performing on the computer.
 
 Transcripts are low bandwidth information on
-
 
 I wonder if there are any large pseudo-anonymized data stores of (post-graduation) transcript grades
 
@@ -103,9 +95,9 @@ large scale courseware engineering
 social; motivation
 machine learning, continual improvement
 
+Side note from me:
+
 Data, privacy, and anonymization are recurring themes. How does one generate datasets we can reliably let others use without damning the individuals the data came from? It seems like there really isn't a way without losing a lot of the features that matter. People will always find ways to creatively point back to a user with enough aggregate information.
-
-
 
 Tue Mar 19 13:26:18 EDT 2013
 ============================
